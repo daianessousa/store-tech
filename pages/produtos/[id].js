@@ -2,6 +2,8 @@ import axios from 'axios';
 import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 export default function Post({ product }) {
   return (
@@ -10,7 +12,8 @@ export default function Post({ product }) {
         <title>Daiane Sousa </title>
         <meta property="og:title" content="Daiane Sousa" key="title" />
       </Head>
-      <div className="bg-gray-50 h-full p-8 flex justify-center">
+      <Navbar />
+      <div className="bg-gray-50 min-h-screen	p-8 flex justify-center">
         <div className="p-2 max-w-sm md:max-w-2xl">
           <div className="flex justify-center flex-wrap content-center mt-6 mb-4">
             <Image
@@ -29,6 +32,7 @@ export default function Post({ product }) {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
