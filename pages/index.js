@@ -31,8 +31,9 @@ export default function Home({ store }) {
                   height={300}
                 />
                 <p className="text-gray-600 text-base">{product.description}</p>
+                <p className="font-bold text-base"> R$ {product.valor},00</p>
                 <p className="font-bold text-base mb-2 mt-2 hover:text-purple-700 transition delay-50">
-                  <Link href={product.link}> Comprar →</Link>
+                  <Link href={`/produtos/${product.id}`}> Comprar →</Link>
                 </p>
               </div>
             </div>
