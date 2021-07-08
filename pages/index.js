@@ -11,12 +11,12 @@ export default function Home({ store }) {
       <Navbar />
       <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <Head>
-          <title>Store da Dai</title>
+          <title> Store </title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-          <p className="text-6xl"> Store da Dai </p>
+          <p className="text-6xl"> Store </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center p-6">
             {store.map((product) => (
               <div
